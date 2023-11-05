@@ -38,10 +38,10 @@ class Scratch3YourExtension {
                     //   BlockType.BOOLEAN - same as REPORTER but returns a true/false value
                     //   BlockType.COMMAND - a normal command block, like "move {} steps"
                     //   BlockType.HAT - starts a stack if its value changes from false to true ("edge triggered")
-                    blockType: BlockType.REPORTER,
+                    blockType: BlockType.COMMAND,
 
                     // label to display on the block
-                    text: 'My first block [MY_NUMBER] and [MY_STRING]',
+                    text: '{My first block} [MY_NUMBER] and [MY_STRING] ,(gdf)',
 
                     // true if this block should end a stack
                     terminal: false,
@@ -93,7 +93,8 @@ class Scratch3YourExtension {
      */
     myFirstBlock ({ MY_NUMBER, MY_STRING }) {
         // example implementation to return a string
-        return MY_STRING + ' : doubled would be ' + (MY_NUMBER * 2);
+        console.log("E");
+        return MY_STRING + ' :  would be ' + (MY_NUMBER);
     }
 }
 
